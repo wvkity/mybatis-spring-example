@@ -8,6 +8,7 @@ import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 @Data
 @EqualsAndHashCode
@@ -27,4 +28,14 @@ public class GradeVo implements Serializable {
      * 年级名称
      */
     private String name;
+
+    /**
+     * 删除标识
+     */
+    private Boolean deleted;
+
+    /**
+     * 创建时间
+     */
+    private LocalDateTime gmtCreated;
 }
