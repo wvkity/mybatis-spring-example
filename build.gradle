@@ -21,7 +21,7 @@ ext {
             cglib = "3.3.0",
             aspectjweaver = "1.9.3",
             slf4j = "1.7.26",
-            log4j2 = "2.11.2",
+            log4j2 = "2.12.1",
             disruptor = "3.4.2",
             guava = "28.0-jre",
             servlet = "4.0.1",
@@ -91,7 +91,7 @@ ext {
 }
 
 allprojects {
-    group 'com.wvkity'
+    group 'com.wvkity.mybatis.example'
     version '1.0.0'
 }
 
@@ -152,7 +152,6 @@ subprojects {
     }
 
     test {
-        dependsOn("cleanTest", "generatePomFileForMavenJavaPublication")
         useJUnitPlatform()
     }
 
